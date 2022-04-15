@@ -4,8 +4,10 @@ const app = express();
 
 const PORT = 5000;
 
+const pokemon = require('./pokemon');
+
 app.get('/', (req,res) => {
-  console.log('Home route hits.');
+  console.log(pokemon);
 });
 
 app.listen(PORT, () => {
